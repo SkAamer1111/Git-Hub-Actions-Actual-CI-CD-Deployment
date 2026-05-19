@@ -14,13 +14,13 @@ jobs:
       - name: checkout the code
         run:  git clone https://github.com/SkAamer1111/Git-Hub-Actions-Actual-CI-CD-Deployment.git
       - name: move to project repo
-        run: cd ./Git-Hub-Actions-Actual-CI-CD-Deployment
-      - name: working directory  
-        run: cd ./three-tier-app
+        run: cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app
       
       - name: build the artificat
         run:  mvn clean package 
 
       - name: run the test cases
         run: mvn test     
+
+
   

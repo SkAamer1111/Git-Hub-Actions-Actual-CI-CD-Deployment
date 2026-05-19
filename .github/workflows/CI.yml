@@ -1,0 +1,12 @@
+name: CI-Workflow
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        run:  git clone https://github.com/SkAamer1111/Git-Hub-Actions-Actual-CI-CD-Deployment.git
+  

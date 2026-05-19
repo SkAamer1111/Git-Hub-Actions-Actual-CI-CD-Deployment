@@ -1,0 +1,22 @@
+name: CD-Workflow
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: clone the code
+      run: git clone https://github.com/SkAamer1111/Git-Hub-Actions-Actual-CI-CD-Deployment.git
+
+    - name: deployment using compose
+      run: |  
+        pwd
+        cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app
+        docker-compose build --no-cache
+        sleep 30
+        docker compose up -d 

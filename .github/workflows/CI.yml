@@ -20,7 +20,7 @@ jobs:
 
       - name: run the test cases
         run: |  
-          cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app/backend
+          pwd
           mvn test     
 
 

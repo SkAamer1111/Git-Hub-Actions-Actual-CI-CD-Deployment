@@ -16,6 +16,7 @@ jobs:
       - name: move to project repo
         run: |  
           cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app/backend
+          pwd
           mvn clean package
 
       - name: run the test cases

@@ -19,7 +19,9 @@ jobs:
           mvn clean package
 
       - name: run the test cases
-        run: mvn test     
+        run: |  
+          cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app/backend
+          mvn test     
 
 
   

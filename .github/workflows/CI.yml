@@ -4,9 +4,26 @@ on:
     branches:
       - main
 jobs:
+  
   build:
+    
     runs-on: ubuntu-latest
+    
     steps:
+      
       - name: checkout the code
         run:  git clone https://github.com/SkAamer1111/Git-Hub-Actions-Actual-CI-CD-Deployment.git
+      - name: move to project repo
+        run: |  
+          cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app/backend
+          pwd
+          mvn clean package
+
+      - name: run the test cases
+        run: |  
+          pwd
+          cd Git-Hub-Actions-Actual-CI-CD-Deployment/three-tier-app/backend
+          mvn test     
+
+
   

@@ -10,8 +10,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: clone the code
-      run: git clone https://github.com/SkAamer1111/Git-Hub-Actions-Actual-CI-CD-Deployment.git
 
     - name: deployment using compose
       run: |  
